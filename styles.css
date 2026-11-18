@@ -35,3 +35,42 @@
 .priority-side .btn{margin-top:12px}
 .priority-side small{font-size:11px;line-height:1.7;color:#c0d0c7;margin-top:18px}
 @media(max-width:700px){.priority-grid{grid-template-columns:1fr}.priority-main,.priority-side{padding:26px 22px}}
+
+
+/* Sections complémentaires issues du document de présentation MSE */
+.identity-section{background:#fff}
+.identity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.identity-card{background:#f8f7f2;border:1px solid var(--line);padding:28px}
+.identity-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#e9e5d8;color:#94703a;font-size:22px}
+.identity-card h3,.portfolio-card h3{font:600 22px 'Playfair Display',Georgia,serif;color:var(--green);margin:18px 0 10px}
+.identity-card h4{color:var(--green);margin:18px 0 8px}
+.identity-card p,.identity-card li{font-size:13px;line-height:1.8;color:var(--muted)}
+.identity-card ul,.identity-card ol{padding-left:18px}
+.portfolio-section{background:#f8f7f2}
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.portfolio-card{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;min-height:260px}
+.portfolio-card>span{font-size:12px;letter-spacing:1px;color:#a47b36;font-weight:800}
+.portfolio-card h3{font-size:19px;margin:14px 0 8px}
+.portfolio-card p{font-size:13px;line-height:1.75;color:var(--muted);flex:1}
+.portfolio-card small{font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:#8b713e;font-weight:800}
+.portfolio-note{font-size:12px;line-height:1.8;color:var(--muted);margin-top:22px}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.values-grid article{padding:22px;border-left:3px solid #b48b49;background:#f8f7f2}
+.values-grid b{font:600 20px 'Playfair Display',Georgia,serif;color:var(--green)}
+.values-grid p{font-size:13px;line-height:1.7;color:var(--muted);margin-bottom:0}
+.organization-section{background:#f8f7f2}
+.organization-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.organization-grid h2,.transparency-box h2{font:600 clamp(30px,4vw,42px)/1.15 'Playfair Display',Georgia,serif;color:var(--green)}
+.organization-grid p,.transparency-box p{font-size:14px;line-height:1.8;color:var(--muted)}
+.org-warning{padding:13px 16px;background:#fff4df;border-left:3px solid #b48b49;font-size:12px!important}
+.org-list{background:#fff;border:1px solid var(--line)}
+.org-list div{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:5px}
+.org-list div:last-child{border-bottom:0}
+.org-list b{font-size:13px;color:var(--green)}
+.org-list span{font-size:12px;color:var(--muted)}
+.transparency-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;padding:38px;background:#f8f7f2}
+.transparency-points p{padding:13px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:5px;margin:0}
+.transparency-points b{color:var(--green);font-size:14px}
+.transparency-points span{font-size:12px;color:var(--muted);line-height:1.7}
+@media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}.identity-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.identity-grid,.portfolio-grid,.values-grid,.organization-grid,.transparency-box{grid-template-columns:1fr}.transparency-box{padding:25px 20px}}

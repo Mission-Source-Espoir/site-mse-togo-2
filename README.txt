@@ -31,3 +31,25 @@ Pour publier la mise à jour, téléverser/remplacer index.html, styles.css, scr
 Nouvelle rubrique : Projet prioritaire n° 1 – Évangélisation et accès à la Bible.
 Cette présentation décrit des objectifs et des besoins à préciser avec les communautés ; elle ne prétend pas que les actions sont déjà réalisées.
 La rubrique est disponible en français, anglais, éwé, portugais, espagnol, coréen et chinois simplifié.
+
+
+MISE À JOUR – VERSION COMPLÉTÉE
+Cette version conserve le projet prioritaire « Évangélisation et accès à la Bible »
+et ajoute les éléments du document de présentation qui n'étaient pas encore
+développés sur le site :
+- Vision, mission et objectifs ;
+- présentation des autres axes de projets ;
+- valeurs de la mission ;
+- organisation proposée, clairement signalée comme prévisionnelle ;
+- transparence et futurs comptes rendus aux partenaires.
+
+Important :
+- Les projets affichés comme « à planifier » ou « à développer » ne sont pas
+  présentés comme des réalisations achevées.
+- Aucun numéro Mobile Money ni coordonnée bancaire personnelle n'est publié.
+- Les paiements en ligne ne sont pas activés : le bouton de soutien contacte
+  actuellement la mission par courriel.
+- Les fonctions de l'équipe restent des propositions tant que les personnes
+  concernées ne sont pas officiellement désignées.
+- Les traductions dans les langues autres que le français doivent être relues
+  par des personnes compétentes avant une communication officielle.
