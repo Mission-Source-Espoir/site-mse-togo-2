@@ -1,32 +1,34 @@
-# MISSION SOURCE D'ESPOIR (MSE) — site web v4
+# MISSION SOURCE D'ESPOIR (MSE) — site web v5
 
-Site statique responsive pour GitHub Pages.
+Cette archive contient les fichiers du site à déposer **à la racine** du dépôt GitHub :
+`Mission-Source-Espoir/site-mse-togo-2`.
 
-## Modifications de cette version
-- Ajout de la photo de terrain fournie dans le ZIP WhatsApp (`terrain-visite.jpg`) dans la galerie.
-- Les autres photos de galerie sont des illustrations externes, clairement signalées comme telles.
-- Ajout d'un sélecteur de langues : français, anglais, espagnol, portugais, chinois simplifié et coréen.
-- Traduction automatique via Google Translate. La traduction nécessite une connexion Internet et le service tiers peut afficher des traductions imparfaites. Le choix « Autres langues » ouvre une langue supplémentaire disponible via le service.
-- Ajout d'un parcours interactif de préparation de don : montant, devise, projet, moyen de paiement, puis transmission des détails par WhatsApp.
-- Flooz et Mixx affichent les numéros communiqués ; le virement affiche les coordonnées Ecobank sans IBAN.
-- L'IBAN n'est pas publié.
+## Changement principal
+- `fondateurs-famille.jpg` a été remplacée par la dernière photo de famille fournie.
+- `index.html` appelle déjà cette image avec le chemin `fondateurs-famille.jpg`.
+- Le reste du site (styles, scripts, galerie de terrain, langues et parcours de dons) est conservé.
 
-## Important : paiements
-Le site ne peut pas, à lui seul, débiter un compte Mobile Money ou une carte, ni confirmer automatiquement qu'un transfert est arrivé.
-- Flooz / Mixx : le donateur effectue le transfert depuis son application vers le numéro affiché ; il peut ensuite envoyer les détails via WhatsApp.
-- Virement : le donateur effectue le virement auprès de sa banque.
-- Carte bancaire : non activée. Pour automatiser l'encaissement, MSE doit ouvrir/faire valider un compte marchand chez un prestataire de paiement compatible avec le Togo et fournir les identifiants/API requis. Les secrets ne doivent jamais être placés dans le code public GitHub.
-- Cryptomonnaie : non activée tant que MSE n'a pas confirmé l'adresse officielle du portefeuille et le réseau accepté.
-Le site ne prétend pas qu'une transaction a été reçue.
+## Corriger / mettre à jour le dépôt GitHub existant
+1. Ouvrir https://github.com/Mission-Source-Espoir/site-mse-togo-2
+2. Cliquer sur **Add file → Upload files**.
+3. Décompresser cette archive sur votre ordinateur.
+4. Glisser-déposer **tous les fichiers** directement dans la zone d'envoi, sans créer de sous-dossier `mse-site-v5`.
+5. GitHub doit proposer le remplacement des fichiers existants. Vérifier surtout `fondateurs-famille.jpg`. Téléverser aussi `index.html`, `styles.css`, `script.js`, `terrain-visite.jpg` et `README.md` afin que les versions soient cohérentes.
+6. En bas, cliquer sur **Commit changes** pour enregistrer sur la branche `main`.
+7. Aller dans **Actions** et attendre que `pages build and deployment` affiche une coche verte.
 
-## Publier sur GitHub Pages
-1. Créer un dépôt GitHub public, par exemple `mission-source-espoir`.
-2. Décompresser l'archive et téléverser **tout le contenu** du dossier `mse-site-v4` à la racine du dépôt (notamment `index.html`, `styles.css`, `script.js`, `fondateurs-famille.jpg` et `terrain-visite.jpg`).
-3. Ouvrir **Settings → Pages**.
-4. Sous **Build and deployment**, choisir **Deploy from a branch**, branche `main`, dossier `/ (root)`, puis **Save**.
-5. Attendre le déploiement GitHub Pages et ouvrir l'URL fournie par GitHub.
+## Structure attendue à la racine
+- `index.html`
+- `styles.css`
+- `script.js`
+- `fondateurs-famille.jpg`
+- `terrain-visite.jpg`
+- `README.md`
 
-## Avant publication
-- Vérifier que la mission souhaite publier les coordonnées de compte Ecobank fournies.
-- Vérifier les droits et autorisations des photos externes et les remplacer idéalement par des photos authentiques de MSE.
-- Les traductions automatiques sont fournies par un service tiers et ne sont pas des traductions humaines certifiées.
+Les dossiers et fichiers historiques qui ne sont pas appelés par `index.html` (par exemple une ancienne copie `famille-ayivon.jpg`, `README.txt` ou un dossier `assets`) peuvent rester en place. Ils ne sont pas nécessaires au site actuel ; ne les supprimez pas si vous n'êtes pas certain qu'aucune autre page ne les utilise.
+
+## Vérifier le site publié
+Ouvrir l'adresse GitHub Pages affichée dans le dépôt sous **Settings → Pages**. Le dépôt public et les exécutions vertes d'Actions sont de bons signes, mais vérifiez également le rendu final dans le navigateur.
+
+## Paiements
+Le formulaire prépare les informations et ouvre WhatsApp. Il ne réalise pas lui-même de débit ni de confirmation bancaire. Les paiements par carte et cryptomonnaie restent à connecter auprès de prestataires compatibles. Ne mettez jamais de clés API secrètes dans le dépôt public.
