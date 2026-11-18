@@ -1,314 +1,71 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mission Source d'Espoir – porter l'Évangile, servir les communautés, transformer les vies au Togo.">
-  <meta name="theme-color" content="#123c32">
-  <title>Mission Source d'Espoir | MSE – Togo</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mission Source d'Espoir (MSE) : porter l'Évangile, servir les communautés et transformer les vies au Togo et, progressivement, dans les nations.">
+  <meta name="theme-color" content="#123d2c">
+  <title>Mission Source d'Espoir | MSE – Une mission sans frontières</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="topline">
-    <div class="container topline-inner">
-      <span data-i18n="topline">Mission chrétienne et actions communautaires au Togo</span>
-      <a href="mailto:missionsourcedespoir@gmail.com">missionsourcedespoir@gmail.com</a>
-    </div>
+<header class="site-header">
+  <a class="brand" href="#accueil" aria-label="Mission Source d'Espoir, accueil"><span class="brand-mark">MSE</span><span><strong>MISSION SOURCE D'ESPOIR</strong><small>UNE MISSION SANS FRONTIÈRES</small></span></a>
+  <div class="header-tools"><label class="language-label" for="language-select">Langue</label><select id="language-select" aria-label="Choisir la langue"><option value="fr">Français</option><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option><option value="zh-CN">中文</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="sw">Kiswahili</option><option value="ha">Hausa</option><option value="yo">Yorùbá</option><option value="other">Autres langues…</option></select><div id="google_translate_element" aria-hidden="true"></div></div><button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav class="nav"><a href="#mission">Notre mission</a><a href="#actions">Nos actions</a><a href="#international">Notre vision</a><a href="#equipe">Les fondateurs</a><a class="nav-donate" href="#don">Faire un don <span>↗</span></a></nav>
+</header>
+<main>
+<section class="hero hero-photo" id="accueil">
+  <div class="hero-photo-bg" role="img" aria-label="Communauté rurale africaine rassemblée autour d'un point d'eau"></div><div class="hero-shade"></div>
+  <div class="hero-content">
+    <span class="eyebrow"><i></i> Togo aujourd'hui · Les nations demain</span>
+    <h1>Une mission<br><em>sans frontières.</em></h1>
+    <p class="hero-lead">Porter l'Évangile de Jésus-Christ, servir les communautés et transformer les vies — au Togo et, avec le temps, dans d'autres nations.</p>
+    <div class="hero-actions"><a class="btn btn-gold" href="#don">Soutenir la mission <span>→</span></a><a class="btn btn-outline" href="#mission">Découvrir notre engagement</a></div>
+    <div class="hero-verse"><span>« Allez, faites de toutes les nations des disciples… »</span><small>MATTHIEU 28.19</small></div>
   </div>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="Mission Source d'Espoir - Accueil">
-        <span class="brand-mark">MSE</span>
-        <span class="brand-name">MISSION SOURCE<br><b>D'ESPOIR</b><small>TOGO</small></span>
-      </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-      <nav id="mainNav">
-        <a href="#apropos" data-i18n="nav_about">Qui sommes-nous</a>
-        <a href="#vision" >Vision &amp; mission</a>
-        <a href="#famille" data-i18n="nav_family">La famille missionnaire</a>
-        <a href="#actions" data-i18n="nav_actions">Nos actions</a>
-        <a href="#projet-bible" data-i18n="nav_project">Projet prioritaire</a>
-        <a href="#autres-projets">Autres projets</a>
-        <a href="#valeurs">Nos valeurs</a>
-        <a href="#impact" data-i18n="nav_impact">Notre engagement</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
-        <a class="nav-donate" href="#don" data-i18n="nav_donate">Soutenir la mission</a>
-        <label class="language-picker">
-          <span class="sr-only">Language</span>
-          <select id="languageSelect" aria-label="Choisir la langue">
-            <option value="fr">🇫🇷 Français</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="ee">Eʋegbe (Éwé)</option>
-            <option value="pt">Português</option>
-            <option value="es">Español</option>
-            <option value="ko">한국어</option>
-            <option value="zh">中文（简体）</option>
-          </select>
-        </label>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="accueil">
-      <div class="hero-shape shape-one"></div><div class="hero-shape shape-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero_eyebrow">FOI • SERVICE • ESPÉRANCE</p>
-          <h1 data-i18n="hero_title">Porter l'Évangile.<br><em>Servir les communautés.</em></h1>
-          <p class="hero-lead" data-i18n="hero_text">Nous œuvrons auprès des communautés rurales du Togo pour partager l'espérance de Jésus-Christ et accompagner les personnes dans leurs besoins spirituels et sociaux.</p>
-          <div class="hero-actions">
-            <a class="btn btn-gold" href="#actions" data-i18n="hero_cta1">Découvrir nos actions</a>
-            <a class="btn btn-outline" href="#don" data-i18n="hero_cta2">Soutenir la mission</a>
-          </div>
-          <div class="hero-note"><span class="dot"></span><span data-i18n="hero_note">Une mission au service des personnes et des communautés.</span></div>
-        </div>
-        <div class="hero-visual" aria-label="Illustration symbolique de la mission">
-          <div class="visual-card">
-            <div class="sun"></div>
-            <div class="hill hill-back"></div><div class="hill hill-front"></div>
-            <div class="cross">✝</div>
-            <div class="visual-caption"><span data-i18n="visual_caption">ENSEMBLE, FAISONS GRANDIR L'ESPÉRANCE</span><b>Matthieu 28.19–20</b></div>
-          </div>
-          <div class="floating-stamp"><span>♥</span><small data-i18n="stamp">Foi en action</small></div>
-        </div>
-      </div>
-      <div class="hero-bottom"></div>
-    </section>
-
-    <section class="intro section" id="apropos">
-      <div class="container intro-grid">
-        <div>
-          <p class="eyebrow dark" data-i18n="about_label">QUI SOMMES-NOUS ?</p>
-          <h2 data-i18n="about_title">Une source d'espoir pour chaque communauté.</h2>
-        </div>
-        <div class="intro-text">
-          <p data-i18n="about_text">Mission Source d'Espoir (MSE – Togo) est une initiative chrétienne engagée dans l'évangélisation, l'implantation d'Églises, la formation de disciples et l'accompagnement des communautés, particulièrement en milieu rural.</p>
-          <p data-i18n="about_text2">Nous croyons que la foi se manifeste aussi par l'amour concret, la solidarité et le service du prochain.</p>
-          <a class="text-link" href="#contact" data-i18n="about_link">Entrer en contact →</a>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="section identity-section" id="vision">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow dark">NOTRE RAISON D'ÊTRE</p><h2>Vision, mission et objectifs</h2></div>
-          <p>Une œuvre missionnaire qui associe l'annonce de l'Évangile à un service concret des personnes et des communautés.</p>
-        </div>
-        <div class="identity-grid">
-          <article class="identity-card"><span class="identity-icon">◎</span><h3>Notre vision</h3>
-            <p>Voir les populations des villages et des communautés rurales du Togo transformées par l'Évangile de Jésus-Christ, enracinées dans la foi chrétienne et bénéficiant de meilleures conditions de vie.</p>
-            <ul><li>Que chacun puisse entendre l'Évangile dans une langue comprise.</li><li>Que les Églises locales grandissent vers l'autonomie.</li><li>Que les enfants, les familles et les personnes vulnérables soient accompagnés.</li></ul>
-          </article>
-          <article class="identity-card"><span class="identity-icon">✦</span><h3>Notre mission</h3>
-            <p>Aller à la rencontre des villages et des populations rurales pour annoncer Jésus-Christ, faire des disciples, implanter des Églises et apporter une assistance spirituelle, éducative, sanitaire et sociale.</p>
-            <p>Notre engagement veut témoigner de l'amour du Christ par la parole, la présence, l'écoute et des actions adaptées aux besoins locaux.</p>
-          </article>
-          <article class="identity-card"><span class="identity-icon">➜</span><h3>Notre objectif général</h3>
-            <p>Contribuer à la transformation spirituelle, sociale et communautaire des populations rurales par l'évangélisation, l'implantation d'Églises et des initiatives de développement humain.</p>
-            <h4>Nos objectifs spécifiques</h4>
-            <ol><li>Évangéliser les localités insuffisamment touchées.</li><li>Mettre à disposition des Bibles et ressources audio en langues locales.</li><li>Organiser des projections et campagnes d'évangélisation.</li><li>Implanter des Églises et former les responsables locaux.</li><li>Soutenir les personnes malades, les enfants et les familles vulnérables.</li><li>Contribuer à l'accès à l'eau, à l'éducation et à la nutrition.</li><li>Encourager la dignité humaine et le développement communautaire.</li></ol>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="family-section section" id="famille">
-      <div class="container family-grid">
-        <div class="family-photo-wrap">
-          <img src="assets/famille-ayivon.jpg" alt="Le pasteur missionnaire AYIVON Kanyi, son épouse Amen et leurs deux enfants" loading="lazy">
-          <span class="family-photo-caption" data-i18n="family_caption">Une famille unie autour de la foi et du service</span>
-        </div>
-        <div class="family-copy">
-          <p class="eyebrow dark" data-i18n="family_label">LA FAMILLE MISSIONNAIRE</p>
-          <h2 data-i18n="family_title">Une vision portée avec foi, amour et engagement.</h2>
-          <p data-i18n="family_text1"><strong>Le Pasteur missionnaire AYIVON Kanyi</strong> porte la vision de Mission Source d'Espoir : partager l'Évangile, accompagner les communautés et contribuer à leur transformation spirituelle et sociale.</p>
-          <p data-i18n="family_text2">À ses côtés, son épouse <strong>Amen</strong> est sa partenaire dans l'œuvre missionnaire. Ensemble, ils souhaitent servir Dieu et les populations, avec une attention particulière aux communautés rurales, aux jeunes et aux personnes vulnérables.</p>
-          <p data-i18n="family_text3">Leur famille les accompagne dans cette vision, qui place la foi, l'amour du prochain, la dignité humaine et le service au cœur de l'engagement.</p>
-          <p class="family-quote" data-i18n="family_quote">« Porter l'Évangile, servir les communautés, transformer les vies. »</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mission-band">
-      <div class="container mission-band-inner">
-        <div class="mission-symbol">✦</div>
-        <div><p class="eyebrow light" data-i18n="verse_label">NOTRE INSPIRATION</p><h2 data-i18n="verse">« Allez, faites de toutes les nations des disciples… »</h2><span>Matthieu 28.19–20</span></div>
-        <div class="band-side" data-i18n="verse_side">Partager l'Évangile et servir avec compassion.</div>
-      </div>
-    </section>
-
-    <section class="section actions" id="actions">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow dark" data-i18n="actions_label">CE QUE NOUS FAISONS</p><h2 data-i18n="actions_title">Nos domaines d'action</h2></div>
-          <p data-i18n="actions_intro">Des actions qui associent témoignage chrétien, accompagnement humain et développement communautaire.</p>
-        </div>
-        <div class="action-grid">
-          <article class="action-card"><span class="card-number">01</span><div class="card-icon">✝</div><h3 data-i18n="a1_title">Évangélisation et implantation d'Églises</h3><p data-i18n="a1_text">Partager le message de Jésus-Christ, accompagner les nouveaux croyants et soutenir la naissance de communautés chrétiennes locales.</p></article>
-          <article class="action-card"><span class="card-number">02</span><div class="card-icon">▤</div><h3 data-i18n="a2_title">Accès à la Bible</h3><p data-i18n="a2_text">Faciliter l'accès aux Bibles imprimées et aux ressources audio dans les langues comprises par les communautés.</p></article>
-          <article class="action-card"><span class="card-number">03</span><div class="card-icon">▶</div><h3 data-i18n="a3_title">Cinéma d'évangélisation</h3><p data-i18n="a3_text">Organiser des projections de films et de contenus bibliques avec du matériel adapté aux villages.</p></article>
-          <article class="action-card"><span class="card-number">04</span><div class="card-icon">⌂</div><h3 data-i18n="a4_title">Églises et lieux de rassemblement</h3><p data-i18n="a4_text">Accompagner les communautés dans leurs besoins de lieux de culte et d'espaces de rencontre.</p></article>
-          <article class="action-card"><span class="card-number">05</span><div class="card-icon">＋</div><h3 data-i18n="a5_title">Santé et solidarité</h3><p data-i18n="a5_text">Apporter, selon les moyens disponibles, un soutien aux personnes vulnérables et aux familles en difficulté.</p></article>
-          <article class="action-card"><span class="card-number">06</span><div class="card-icon">◉</div><h3 data-i18n="a6_title">Eau potable</h3><p data-i18n="a6_text">Encourager des initiatives d'accès à l'eau potable, notamment l'étude et la réalisation de forages.</p></article>
-          <article class="action-card"><span class="card-number">07</span><div class="card-icon">⌑</div><h3 data-i18n="a7_title">Éducation et jeunesse</h3><p data-i18n="a7_text">Contribuer à la scolarisation, à l'accompagnement des jeunes et à la formation pratique.</p></article>
-          <article class="action-card"><span class="card-number">08</span><div class="card-icon">♡</div><h3 data-i18n="a8_title">Nutrition et développement local</h3><p data-i18n="a8_text">Soutenir des réponses solidaires face à la malnutrition et à l'insécurité alimentaire.</p></article>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="priority-project section" id="projet-bible">
-      <div class="container">
-        <div class="priority-heading">
-          <p class="eyebrow dark" data-i18n="project_label">PROJET PRIORITAIRE N° 1</p>
-          <h2 data-i18n="project_title">Évangélisation et accès à la Bible</h2>
-          <p data-i18n="project_intro">Partager l'espérance de Jésus-Christ et faciliter l'accès à la Parole de Dieu dans les langues comprises par les communautés.</p>
-        </div>
-        <div class="priority-grid">
-          <div class="priority-main">
-            <div class="priority-icon">✝</div>
-            <h3 data-i18n="project_why_title">Pourquoi ce projet ?</h3>
-            <p data-i18n="project_why">Dans plusieurs communautés rurales, l'accès aux ressources bibliques dans les langues locales peut être limité. MSE souhaite contribuer à rapprocher la Parole de Dieu des personnes, en tenant compte de leurs langues et de leurs réalités.</p>
-            <h3 data-i18n="project_goal_title">Nos objectifs</h3>
-            <ul>
-              <li data-i18n="project_goal1">Faciliter l'accès aux Bibles imprimées et aux ressources bibliques audio.</li>
-              <li data-i18n="project_goal2">Identifier les langues et les besoins prioritaires avec les communautés locales.</li>
-              <li data-i18n="project_goal3">Soutenir des temps d'évangélisation, de lecture et d'écoute de la Bible.</li>
-              <li data-i18n="project_goal4">Accompagner les personnes qui souhaitent découvrir la foi chrétienne.</li>
-            </ul>
-          </div>
-          <aside class="priority-side">
-            <span class="priority-tag" data-i18n="project_status">Projet à développer</span>
-            <h3 data-i18n="project_support_title">Comment participer ?</h3>
-            <p data-i18n="project_support">Les partenaires peuvent contribuer à l'acquisition de Bibles, à la production ou à l'achat de ressources audio, ainsi qu'à leur acheminement vers les communautés concernées.</p>
-            <a class="btn btn-green" href="mailto:missionsourcedespoir@gmail.com?subject=Projet%20%C3%89vang%C3%A9lisation%20et%20acc%C3%A8s%20%C3%A0%20la%20Bible" data-i18n="project_cta">Proposer un partenariat</a>
-            <small data-i18n="project_note">Les besoins, quantités et budgets seront précisés après consultation des communautés et établissement d'un plan d'action.</small>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section portfolio-section" id="autres-projets">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow dark">NOS PERSPECTIVES</p><h2>Les autres projets à développer</h2></div>
-          <p>Ces axes correspondent aux besoins identifiés dans notre vision. Ils seront préparés avec les communautés et les partenaires avant toute mise en œuvre.</p>
-        </div>
-        <div class="portfolio-grid">
-          <article class="portfolio-card"><span>02</span><h3>Cinéma d'évangélisation</h3><p>Acquérir des vidéoprojecteurs et équipements adaptés, organiser des projections de films bibliques, puis proposer des échanges, des prières et un accompagnement.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>03</span><h3>Lieux de culte et implantation d'Églises</h3><p>Étudier les besoins en terrains, locations ou chapelles, et rechercher des bancs et équipements pour les assemblées locales.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>04</span><h3>Santé et solidarité</h3><p>Orienter les personnes vers les centres de santé et, selon les ressources disponibles, soutenir l'accès aux médicaments prescrits et accompagner les personnes âgées ou vulnérables.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>05</span><h3>Eau potable</h3><p>Identifier les villages concernés, rechercher des partenaires pour les forages et les pompes, et sensibiliser à l'hygiène et à l'entretien des ouvrages.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>06</span><h3>Éducation et scolarisation</h3><p>Étudier les besoins en frais de scolarité, fournitures et accompagnement éducatif des enfants et adolescents issus de familles défavorisées.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>07</span><h3>Nutrition et développement local</h3><p>Prévoir des actions de soutien alimentaire, d'accompagnement des familles vulnérables et d'autonomisation communautaire.</p><small>Projet à planifier</small></article>
-          <article class="portfolio-card"><span>08</span><h3>Jeunesse et formation professionnelle</h3><p>Explorer des partenariats de formation pratique pour les jeunes sans emploi et des initiatives favorisant leur autonomie financière.</p><small>Axe complémentaire proposé</small></article>
-          <article class="portfolio-card"><span>09</span><h3>Accompagnement et urgences sociales</h3><p>Développer, avec des partenaires compétents, l'accompagnement des veuves, orphelins, personnes handicapées et familles touchées par des sinistres.</p><small>Axe complémentaire proposé</small></article>
-        </div>
-        <p class="portfolio-note">Les projets présentés ici sont des orientations et des pistes de travail, et non des réalisations déjà financées ou achevées. Les localités, bénéficiaires, quantités, calendriers et budgets seront publiés après vérification.</p>
-      </div>
-    </section>
-
-    <section class="impact-section" id="impact">
-      <div class="container impact-grid">
-        <div class="impact-copy">
-          <p class="eyebrow light" data-i18n="impact_label">NOTRE ENGAGEMENT</p>
-          <h2 data-i18n="impact_title">Une foi qui se traduit par des actes.</h2>
-          <p data-i18n="impact_text">Nous voulons travailler avec les communautés, écouter leurs besoins et développer des actions adaptées, dans le respect de la dignité de chaque personne.</p>
-          <p class="scripture" data-i18n="impact_verse">« La foi, si elle n'a pas les œuvres, est morte en elle-même. » — Jacques 2.17</p>
-        </div>
-        <div class="impact-list">
-          <div><b>01</b><span data-i18n="impact1">Écouter les communautés et discerner les besoins prioritaires.</span></div>
-          <div><b>02</b><span data-i18n="impact2">Agir avec intégrité, compassion et responsabilité.</span></div>
-          <div><b>03</b><span data-i18n="impact3">Rendre compte des activités et de l'utilisation des soutiens reçus.</span></div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section values-section" id="valeurs">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow dark">CE QUI NOUS GUIDE</p><h2>Nos valeurs</h2></div>
-          <p>Ces principes orientent notre manière de servir, de collaborer et de gérer les ressources confiées à la mission.</p>
-        </div>
-        <div class="values-grid">
-          <article><b>Foi</b><p>Placer Jésus-Christ au centre de nos actions.</p></article>
-          <article><b>Amour</b><p>Servir chaque personne avec compassion.</p></article>
-          <article><b>Intégrité</b><p>Agir avec honnêteté et transparence dans la gestion des soutiens.</p></article>
-          <article><b>Solidarité</b><p>Être attentifs aux personnes et familles vulnérables.</p></article>
-          <article><b>Engagement</b><p>Persévérer avec sérieux dans l'œuvre missionnaire.</p></article>
-          <article><b>Dignité humaine</b><p>Respecter chaque personne sans discrimination.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section organization-section" id="organisation">
-      <div class="container organization-grid">
-        <div><p class="eyebrow dark">RESPONSABILITÉ ET COLLABORATION</p><h2>Une organisation appelée à grandir</h2>
-          <p>La mission est portée par le Pasteur missionnaire AYIVON Kanyi et son épouse Amen. Pour accompagner son développement, MSE prévoit de s'appuyer progressivement sur des personnes compétentes, des bénévoles et des partenaires.</p>
-          <p class="org-warning">Les fonctions ci-dessous constituent une organisation proposée. Elles ne désignent pas des personnes déjà nommées ; les responsables seront présentés lorsqu'ils auront été officiellement désignés.</p>
-        </div>
-        <div class="org-list">
-          <div><b>Fondateur et responsable missionnaire</b><span>Orientation générale et coordination de la mission</span></div>
-          <div><b>Responsable de l'évangélisation</b><span>Campagnes, suivi des nouveaux croyants et implantation</span></div>
-          <div><b>Responsable des projets sociaux</b><span>Suivi des actions liées à l'eau, la santé et la nutrition</span></div>
-          <div><b>Responsable administratif et financier</b><span>Suivi administratif, comptabilité et rapports</span></div>
-          <div><b>Responsables locaux, bénévoles et partenaires</b><span>Accompagnement opérationnel et suivi dans les communautés</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section transparency-section" id="transparence">
-      <div class="container transparency-box">
-        <div><p class="eyebrow dark">CONFIANCE ET REDEVABILITÉ</p><h2>Votre soutien en action</h2>
-          <p>Nous souhaitons informer les partenaires de l'utilisation des contributions et des résultats obtenus. Les besoins, budgets, montants collectés et réalisations seront publiés uniquement à partir de données réelles et vérifiées.</p>
-        </div>
-        <div class="transparency-points">
-          <p><b>Des besoins clairement présentés</b><span>Bibles, eau potable, éducation, santé et implantation d'Églises.</span></p>
-          <p><b>Des nouvelles du terrain</b><span>Photos, comptes rendus et témoignages publiés avec les autorisations nécessaires.</span></p>
-          <p><b>Des comptes rendus responsables</b><span>Rapports d'activités et informations financières lorsqu'ils seront disponibles.</span></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="donation section" id="don">
-      <div class="container donation-box">
-        <div><p class="eyebrow dark" data-i18n="don_label">PARTICIPER À LA MISSION</p><h2 data-i18n="don_title">Votre soutien peut faire grandir l'espérance.</h2><p data-i18n="don_text">Vous souhaitez soutenir une action ou en savoir plus sur les possibilités de partenariat ? Écrivez-nous. Nous vous communiquerons les modalités de contribution après échange.</p></div>
-        <div class="donation-action"><a class="btn btn-green" href="mailto:missionsourcedespoir@gmail.com?subject=Soutien%20%C3%A0%20Mission%20Source%20d%27Espoir" data-i18n="don_button">Nous contacter pour soutenir</a><small data-i18n="don_note">Les paiements en ligne ne sont pas encore activés sur ce site.</small></div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container contact-grid">
-        <div><p class="eyebrow dark" data-i18n="contact_label">RESTONS EN CONTACT</p><h2 data-i18n="contact_title">Construisons ensemble des chemins d'espérance.</h2><p data-i18n="contact_text">Pour une question, un partenariat, une invitation ou une proposition de soutien, contactez-nous.</p></div>
-        <div class="contact-card">
-          <span class="contact-icon">✉</span><small data-i18n="email_label">COURRIEL</small>
-          <a href="mailto:missionsourcedespoir@gmail.com">missionsourcedespoir@gmail.com</a>
-          <span class="contact-rule"></span>
-          <small data-i18n="location_label">IMPLANTATION</small><b data-i18n="location">Togo, Afrique de l'Ouest</b>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-main">
-      <a class="brand brand-footer" href="#accueil"><span class="brand-mark">MSE</span><span class="brand-name">MISSION SOURCE<br><b>D'ESPOIR</b><small>TOGO</small></span></a>
-      <p data-i18n="footer_slogan">Porter l'Évangile, servir les communautés, transformer les vies.</p>
-      <div class="footer-links"><a href="#apropos" data-i18n="nav_about">Qui sommes-nous</a>
-        <a href="#vision" >Vision &amp; mission</a>
-        <a href="#famille" data-i18n="nav_family">La famille missionnaire</a><a href="#actions" data-i18n="nav_actions">Nos actions</a>
-        <a href="#projet-bible" data-i18n="nav_project">Projet prioritaire</a>
-        <a href="#autres-projets">Autres projets</a>
-        <a href="#valeurs">Nos valeurs</a><a href="#contact" data-i18n="nav_contact">Contact</a></div>
-    </div>
-    <div class="container footer-bottom"><span>© <span id="year"></span> Mission Source d'Espoir – Togo</span><span data-i18n="footer_note">Site de présentation – informations à actualiser selon les activités réalisées.</span></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="hero-bottom"><span>TOGO · AFRIQUE · LES NATIONS</span><span>PORTER L'ÉVANGILE · SERVIR · TRANSFORMER</span></div>
+</section>
+<section class="intro section" id="mission"><div class="section-kicker">01 / NOTRE ENGAGEMENT</div><div class="intro-grid"><div><h2>La foi qui se vit.<br><em>L'amour qui agit.</em></h2></div><div><p class="large-copy">Mission Source d'Espoir (MSE) est une œuvre missionnaire chrétienne née au Togo, avec une vision tournée vers les nations.</p><p>Nous croyons que chaque personne mérite d'entendre la Parole de Dieu, de vivre dans la dignité et de bénéficier d'un accompagnement adapté à ses besoins. Notre engagement associe évangélisation, formation spirituelle et solidarité humaine.</p><a class="text-link" href="#equipe">Découvrir notre histoire <span>→</span></a></div></div></section>
+<section class="pillars"><div class="pillar"><span>01</span><b>Annoncer</b><p>Porter la Bonne Nouvelle de Jésus-Christ jusqu'aux villages et aux peuples.</p></div><div class="pillar"><span>02</span><b>Former</b><p>Faire des disciples, accompagner les responsables et implanter des églises.</p></div><div class="pillar"><span>03</span><b>Servir</b><p>Répondre aux besoins essentiels avec compassion et respect.</p></div><div class="pillar"><span>04</span><b>Envoyer</b><p>Préparer progressivement l'extension de la mission au-delà du Togo.</p></div></section>
+<section class="projects section" id="actions"><div class="section-kicker">02 / NOS DOMAINES D'ACTION</div><div class="section-heading"><h2>Des actions concrètes,<br><em>une espérance durable.</em></h2><p>Votre soutien contribue à faire avancer ces initiatives auprès des populations rurales et des communautés dans les territoires où la mission interviendra.</p></div>
+<div class="project-grid">
+  <article class="project-card project-feature"><div class="project-icon">✝</div><span class="project-number">01 — SPIRITUEL</span><h3>Évangélisation &amp; implantation d'églises</h3><p>Campagnes d'évangélisation, visites, prières, implantation d'assemblées et formation des responsables locaux.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">▤</div><span class="project-number">02 — PAROLE DE DIEU</span><h3>Accès aux Bibles</h3><p>Distribution de Bibles imprimées, ressources audio et outils bibliques dans les langues locales.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">◉</div><span class="project-number">03 — ÉVANGÉLISATION</span><h3>Cinéma missionnaire</h3><p>Projections de films bibliques, sensibilisation, échanges, prières et accompagnement.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">⌂</div><span class="project-number">04 — LIEUX DE CULTE</span><h3>Construction d'églises</h3><p>Recherche de terrains, location de lieux de culte, construction de chapelles et équipements.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">＋</div><span class="project-number">05 — SOLIDARITÉ</span><h3>Santé &amp; assistance sociale</h3><p>Accompagnement des personnes malades, des personnes âgées et des familles vulnérables.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">♧</div><span class="project-number">06 — EAU POTABLE</span><h3>Accès à l'eau</h3><p>Identification des besoins, recherche de partenaires, réalisation de forages et installation de pompes.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">✎</div><span class="project-number">07 — ÉDUCATION</span><h3>Éducation &amp; scolarisation</h3><p>Frais de scolarité, fournitures et accompagnement des enfants orphelins ou défavorisés.</p><a href="#don">Soutenir cette action ↗</a></article>
+  <article class="project-card"><div class="project-icon">♡</div><span class="project-number">08 — DÉVELOPPEMENT</span><h3>Nutrition &amp; familles</h3><p>Distribution de vivres, soutien aux familles démunies et initiatives d'autonomisation locale.</p><a href="#don">Soutenir cette action ↗</a></article>
+</div></section>
+<section class="photo-stories section" aria-labelledby="photos-title"><div class="section-kicker">03 / SERVIR CONCRÈTEMENT</div><div class="section-heading"><h2 id="photos-title">L'espérance prend<br><em>forme sur le terrain.</em></h2><p>Des images pour présenter l'engagement de la mission et les besoins auxquels elle souhaite répondre.</p></div>
+  <div class="story-grid">
+    <figure class="field-photo"><img src="terrain-visite.jpg" alt="Photo de terrain fournie par MSE lors d'un déplacement en pirogue" loading="lazy"><figcaption><b>Déplacement sur le terrain</b><span>Une photographie transmise par la mission, illustrant un déplacement en milieu riverain.</span><small>Photo fournie par MSE</small></figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?auto=format&fit=crop&w=1000&q=80" alt="Communauté rurale réunie autour d'un point d'eau" loading="lazy"><figcaption><b>L'accès à l'eau potable</b><span>Un besoin essentiel pour la santé et la dignité des familles.</span><small>Photo illustrative — Unsplash</small></figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80" alt="Enfants dans une salle de classe" loading="lazy"><figcaption><b>L'éducation des enfants</b><span>Contribuer à de meilleures conditions d'apprentissage.</span><small>Photo illustrative — Unsplash</small></figcaption></figure>
+  </div>
+  <p class="image-disclaimer">La première photo a été fournie par MSE. Les autres images sont des illustrations et ne représentent pas nécessairement des projets déjà réalisés par la mission.</p>
+</section>
+<section class="field section" id="besoins"><div class="field-copy"><div class="section-kicker light">04 / SUR LE TERRAIN</div><h2>Les besoins sont réels.<br><em>Votre aide peut compter.</em></h2><p>Au cours de leurs interventions, les équipes rencontrent des communautés confrontées au manque de ressources et à des difficultés quotidiennes. Ensemble, nous pouvons contribuer à des réponses concrètes, adaptées aux réalités locales.</p><a class="btn btn-gold" href="#don">Répondre à un besoin <span>→</span></a></div><div class="needs-list"><div><span>01</span><b>Des villages sans accès suffisant à l'eau potable</b><small>Forages, pompes et sensibilisation à l'hygiène</small></div><div><span>02</span><b>Des enfants confrontés aux difficultés scolaires</b><small>Frais de scolarité et fournitures</small></div><div><span>03</span><b>Des familles vulnérables et des personnes malades</b><small>Assistance sociale, sanitaire et alimentaire</small></div><div><span>04</span><b>Des communautés éloignées de ressources bibliques</b><small>Bibles, supports audio et accompagnement</small></div><div><span>05</span><b>Des équipes missionnaires ayant besoin de moyens</b><small>Équipements et moyens de déplacement</small></div></div></section>
+<section class="international section" id="international"><div class="section-kicker">05 / UNE VISION QUI DÉPASSE LES FRONTIÈRES</div><div class="international-grid"><div><h2>Du Togo<br><em>vers les nations.</em></h2></div><div><p class="large-copy">Le Togo est le point de départ de notre engagement, pas la limite de notre vision.</p><p>Avec le temps, selon les moyens, les partenariats et les orientations de la mission, MSE aspire à étendre ses actions dans d'autres pays et à servir des communautés au-delà de ses frontières actuelles.</p><p>Nous souhaitons construire des partenariats avec des Églises, des organisations missionnaires et des personnes de bonne volonté partout dans le monde.</p><a class="btn btn-green" href="#contact">Devenir partenaire international <span>→</span></a></div></div></section>
+<section class="verse-band"><div class="verse-mark">“</div><blockquote>« Allez, faites de toutes les nations des disciples […] et enseignez-leur à observer tout ce que je vous ai prescrit. »</blockquote><span>MATTHIEU 28.19-20</span></section>
+<section class="about section" id="equipe"><div class="about-photo"><img src="fondateurs-famille.jpg" alt="Le Pasteur missionnaire AYIVON Kanyi avec son épouse Amen et leurs enfants" loading="lazy"><span>Le couple fondateur et leur famille</span></div><div class="about-copy"><div class="section-kicker">06 / QUI SOMMES-NOUS ?</div><h2>Une vision portée<br><em>avec conviction.</em></h2><p>Mission Source d'Espoir est portée par le Pasteur missionnaire <strong>AYIVON Kanyi</strong> et son épouse <strong>Amen</strong>, un couple togolais engagé dans l'œuvre de Dieu.</p><p>Ensemble, ils souhaitent annoncer l'Évangile, faire des disciples, implanter de nouvelles églises et manifester concrètement l'amour du Christ à travers des actions sociales et humanitaires.</p><p>Ils lancent un appel aux Églises, aux partenaires missionnaires, aux organisations chrétiennes et à toutes les personnes de bonne volonté afin qu'elles deviennent partenaires de cette vision.</p><div class="signature">MISSION SOURCE D'ESPOIR <small>Porter l'Évangile · Servir les communautés · Transformer les vies</small></div></div></section>
+<section class="values"><div class="section-kicker light">07 / CE QUI NOUS GUIDE</div><h2>Nos valeurs fondamentales</h2><div class="values-grid"><div><b>Foi</b><span>Jésus-Christ au centre de nos actions.</span></div><div><b>Amour</b><span>Servir chaque personne avec compassion.</span></div><div><b>Intégrité</b><span>Gérer les dons avec honnêteté et transparence.</span></div><div><b>Solidarité</b><span>Venir en aide aux personnes vulnérables.</span></div><div><b>Engagement</b><span>Persévérer dans l'œuvre missionnaire.</span></div><div><b>Dignité</b><span>Respecter chaque personne sans discrimination.</span></div></div></section>
+<section class="donation section" id="don"><div class="donation-main"><div class="section-kicker">08 / PARTICIPER À LA MISSION</div><h2>Un don, une prière,<br><em>une vie encouragée.</em></h2><p>Votre générosité peut contribuer à apporter la Parole de Dieu, soutenir un enfant, accompagner une famille, aider une personne malade ou améliorer l'accès à l'eau potable.</p><p class="donation-emphasis">Chaque contribution compte. Chaque geste peut faire une différence.</p><p>Choisissez un moyen de contribution. Le site vous indiquera les étapes à suivre et vous permettra de transmettre les détails du don à la mission.</p><button class="btn btn-green" id="open-donation" type="button">Choisir comment donner <span>→</span></button><small class="secure-note">Important : les transferts Flooz, Mixx et bancaires sont effectués par le donateur depuis son application ou sa banque. Le site ne débite pas votre compte et ne confirme pas automatiquement la réception. Les paiements par carte et cryptomonnaie seront activés après configuration d'un prestataire et des coordonnées officielles.</small></div>
+<aside class="donation-panel"><span class="panel-label">MOYENS DE CONTRIBUTION</span><h3>Votre soutien rend l'action possible.</h3>
+  <div class="payment-block"><b>Mobile Money</b><p><span>Flooz</span><strong>+228 99 82 07 42</strong><button class="copy-btn" data-copy="+22899820742" type="button">Copier</button></p><p><span>Mixx by Yas</span><strong>+228 90 99 96 90</strong><button class="copy-btn" data-copy="+22890999690" type="button">Copier</button></p></div>
+  <div class="payment-block"><b>Virement bancaire — Ecobank Togo</b><dl><dt>Titulaire</dt><dd>AYIVON Kanyi</dd><dt>Code banque</dt><dd>TG055</dd><dt>Code agence</dt><dd>01705</dd><dt>SWIFT</dt><dd>ECOCTGTG</dd><dt>Compte</dt><dd>141529484001</dd><dt>Code pays</dt><dd>TG53</dd><dt>Clé RIB</dt><dd>11</dd></dl></div>
+  <div class="payment-block pending"><b>Carte bancaire</b><p>Option en préparation. Un prestataire de paiement sécurisé et un compte marchand validé sont nécessaires avant toute collecte par carte.</p></div>
+  <div class="payment-block pending"><b>Cryptomonnaie</b><p>Option en préparation. L'adresse officielle du portefeuille et le réseau accepté devront être confirmés avant tout transfert.</p></div>
+  <p class="bank-note">L'IBAN n'est pas publié. Vérifiez les coordonnées auprès de la mission avant tout virement et conservez votre preuve de paiement.</p>
+</aside></section>
+<div class="donation-modal" id="donation-modal" hidden role="dialog" aria-modal="true" aria-labelledby="donation-modal-title"><div class="donation-dialog"><button class="modal-close" id="close-donation" aria-label="Fermer" type="button">×</button><span class="section-kicker">SOUTENIR MSE</span><h2 id="donation-modal-title">Préparer votre contribution</h2><p>Indiquez votre contribution pour afficher les instructions et prévenir la mission.</p>
+<form id="donation-form"><label>Votre nom (facultatif)<input name="donor" autocomplete="name" placeholder="Nom ou organisation"></label><label>Montant envisagé<input name="amount" type="number" min="1" step="any" placeholder="Ex. 10000" required></label><label>Devise<select name="currency"><option value="XOF">FCFA (XOF)</option><option value="EUR">EUR</option><option value="USD">USD</option></select></label><label>Projet à soutenir<select name="project"><option>Selon les besoins prioritaires</option><option>Évangélisation et Bibles</option><option>Implantation d'églises</option><option>Eau potable</option><option>Éducation et scolarisation</option><option>Santé et assistance sociale</option><option>Nutrition et aide aux familles</option><option>Moyens des équipes missionnaires</option></select></label><label>Moyen de contribution<select name="method" id="donation-method"><option value="Flooz">Flooz</option><option value="Mixx by Yas">Mixx by Yas</option><option value="Virement Ecobank">Virement Ecobank</option><option value="Carte bancaire">Carte bancaire (bientôt disponible)</option><option value="Cryptomonnaie">Cryptomonnaie (bientôt disponible)</option></select></label><div class="modal-instructions" id="modal-instructions" aria-live="polite"></div><button class="btn btn-green" type="submit">Continuer avec WhatsApp <span>→</span></button></form><small class="secure-note">Pour Flooz, Mixx et le virement, effectuez vous-même le transfert avec votre application ou votre banque. WhatsApp sert à transmettre les détails et demander confirmation ; il ne déclenche pas le paiement.</small></div></div>
+<section class="contact section" id="contact"><div><div class="section-kicker">09 / NOUS CONTACTER</div><h2>Construisons ensemble<br><em>une espérance durable.</em></h2><p>Églises, partenaires, bénévoles et amis de la mission : prenez contact avec nous pour échanger sur les possibilités de collaboration.</p></div><div class="contact-details"><a href="mailto:missionsourcedespoir@gmail.com"><span>Courriel</span><b>missionsourcedespoir@gmail.com</b></a><a href="https://wa.me/22890999690" target="_blank" rel="noopener"><span>WhatsApp</span><b>+228 90 99 96 90</b></a><p><span>Base actuelle</span><b>Togo · Afrique de l'Ouest</b></p></div></section>
+<section class="final-cta"><span>MISSION SOURCE D'ESPOIR · MSE</span><h2>Ensemble, faisons grandir<br><em>l'espérance parmi les nations.</em></h2><a class="btn btn-gold" href="#don">S'engager à nos côtés <span>→</span></a></section>
+</main>
+<footer class="footer"><a class="brand brand-footer" href="#accueil"><span class="brand-mark">MSE</span><span><strong>MISSION SOURCE D'ESPOIR</strong><small>UNE MISSION SANS FRONTIÈRES</small></span></a><p>Porter l'Évangile, servir les communautés, transformer les vies.</p><div class="footer-links"><a href="#mission">Notre mission</a><a href="#actions">Nos actions</a><a href="#international">Notre vision internationale</a><a href="#don">Faire un don</a><a href="mailto:missionsourcedespoir@gmail.com">Nous contacter</a></div><small class="copyright">© <span id="year"></span> Mission Source d'Espoir. Tous droits réservés.</small><small class="copyright privacy-note">Les photos illustratives sont signalées. Les moyens de paiement électroniques sont soumis à validation et configuration.</small></footer>
+<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:"fr",includedLanguages:"en,es,pt,zh-CN,ko,ar,de,it,sw,ha,yo,fr",autoDisplay:false}, "google_translate_element");}</script><script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><script src="script.js"></script>
+</body></html>
