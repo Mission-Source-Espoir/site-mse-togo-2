@@ -27,3 +27,7 @@ IMPORTANT
 Nouvelle rubrique : famille missionnaire (AYIVON Kanyi, son épouse Amen et leurs deux enfants).
 Photo optimisée : assets/famille-ayivon.jpg.
 Pour publier la mise à jour, téléverser/remplacer index.html, styles.css, script.js et ajouter le dossier assets contenant famille-ayivon.jpg.
+
+Nouvelle rubrique : Projet prioritaire n° 1 – Évangélisation et accès à la Bible.
+Cette présentation décrit des objectifs et des besoins à préciser avec les communautés ; elle ne prétend pas que les actions sont déjà réalisées.
+La rubrique est disponible en français, anglais, éwé, portugais, espagnol, coréen et chinois simplifié.
