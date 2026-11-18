@@ -23,3 +23,7 @@ IMPORTANT
 - Les dons en ligne ne sont pas activés. Le bouton de soutien ouvre seulement un courriel.
 - Ne publier aucun mot de passe, code, numéro confidentiel, relevé bancaire ou donnée personnelle sensible.
 - Les informations sur les projets et réalisations doivent être exactes. Ne pas présenter un projet prévu comme déjà réalisé.
+
+Nouvelle rubrique : famille missionnaire (AYIVON Kanyi, son épouse Amen et leurs deux enfants).
+Photo optimisée : assets/famille-ayivon.jpg.
+Pour publier la mise à jour, téléverser/remplacer index.html, styles.css, script.js et ajouter le dossier assets contenant famille-ayivon.jpg.
